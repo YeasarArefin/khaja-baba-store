@@ -16,6 +16,7 @@ const showProducts = (products) => {
 			<div class="card-body">
 				<h5 class="card-title mb-3">${product.title}</h5>
 				<h5 class="card-title mb-3">Category : ${product.category}</h5>
+				<h5 class="card-title mb-3">Price : $ ${product.price}</h5>
 				<button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-light">add to cart</button>
 				<button id="details-btn" class="btn btn-danger">Details</button>
 				<h6 class="mt-3"><i class="fas fa-star"style="color:#f09c00;"></i><i class="fas fa-star"style="color:#f09c00;"></i><i class="fas fa-star"style="color:#f09c00;"></i> ${product.rating.rate} <span class="ms-3"><i class="fas fa-user"></i> ${product.rating.count} People Rated</span></h6>
