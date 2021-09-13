@@ -15,9 +15,10 @@ const showProducts = (products) => {
 			<img src=${image} class="card-img-top p-3" alt="...">
 			<div class="card-body">
 				<h5 class="card-title mb-3">${product.title}</h5>
+				<h5 class="card-title mb-3">Category : ${product.category}</h5>
 				<button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-light">add to cart</button>
 				<button id="details-btn" class="btn btn-danger">Details</button>
-				<h6 class="mt-3"><i class="fas fa-star"style="color:#f09c00;"></i><i class="fas fa-star"style="color:#f09c00;"></i><i class="fas fa-star"style="color:#f09c00;"></i> ${product.rating.rate} <span class="ms-3"><i class="fas fa-user"></i> ${product.rating.count}</span></h6>
+				<h6 class="mt-3"><i class="fas fa-star"style="color:#f09c00;"></i><i class="fas fa-star"style="color:#f09c00;"></i><i class="fas fa-star"style="color:#f09c00;"></i> ${product.rating.rate} <span class="ms-3"><i class="fas fa-user"></i> ${product.rating.count} People Rated</span></h6>
 			</div>
 		</div>`;
 		document.getElementById("all-products").appendChild(div);
